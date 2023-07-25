@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&family=IBM+Plex+Sans+Condensed:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=IBM+Plex+Serif:ital@0;1&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    background-color: #0084D4;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.topMenu {
+    background-color: #141C22;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+span,
+.forgotPass {
+    cursor: pointer;
+}
+
+.form-row-field {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 8px;
+    line-height: 18px;
+    display: inline-block;
+    max-width: 100%;
+    color: #fff;
+}
+
+.labelSelected {
+    top: -5px !important;
+    font-size: 12px !important;
+    color: #003333 !important;
+    font-weight: 400 !important;
+}
+
+#passwordField:focus~label,
+#username:focus~label {
+    top: -5px;
+    font-size: 12px;
+    color: #003333;
+    font-weight: 400;
+}
+
+.spanLink {
+    color: #217af2;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.headingLogin {
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 42px;
+}
+
+.logo {
+    opacity: 0.6;
+}
+
+.dontAccountText {
+    color: #6d6e71;
+    font-size: 15px;
+    line-height: 1.5rem;
+    margin-top: 0.625rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+
+.linkNewAccount {
+    color: #217af2;
+    cursor: pointer;
+    font-size: inherit;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+form {
+    max-width: 500px;
+    margin-top: 50px;
+    position: relative;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 0px;
+    height: 40px;
+}
+
+form .formWrapperInputDetailsMainInput,
+form .formWrapperInputDetailsPass {
+    position: relative;
+}
+
+.formWrapperInputDetails {
+    margin-bottom: 24px;
+}
+
+form .eyeForm {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    color: #6d6e71;
+}
+
+#footer {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: rgb(71, 77, 87);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footerOne {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    font-weight: 300;
+    font-size: 9px;
+    line-height: 11px;
+    text-align: center;
+    padding: 12px 16px;
+}
+
+.footerLoginButton {
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.spanBut {
+    color: #808285;
+    font-size: 10px;
+    line-height: .875rem;
+    padding-top: 2.5rem;
+    text-align: center;
+}
+
+.formContainer {
+    display: inline-block;
+    padding-bottom: 16px;
+    margin-top: 60px;
+    border-bottom: 1px solid rgba(0, 54, 98, 0.3);
+    width: 360px;
+}
+
+.spanBut span {
+    color: #217af2;
+}
+
+.click_login_submit {
+    margin-top: 40px;
+    border: 0;
+    font-size: 15px;
+    font-weight: bold;
+    width: 220px;
+    height: 44px;
+    border-radius: 3px;
+    color: #fff;
+    margin-bottom: 24px;
+    background-color: #003662;
+}
+
+.forgotPass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.rememberPass {
+    padding-right: 12px;
+    border-right: 1px solid #054559;
+    margin-left: 12px;
+    vertical-align: baseline;
+    font-size: 13.2px;
+    color: #fff;
+}
+
+.forgotPassText {
+    font-size: 13.2px;
+    display: inline-block;
+    border-bottom: 1px solid #FFF;
+    color: #FFF;
+    cursor: pointer;
+    vertical-align: baseline;
+    padding: 1px;
+    margin-left: 13px;
+}
+
+#checkValue {
+    display: inline-block;
+    position: relative;
+    line-height: 0;
+    width: 16px;
+    border-radius: 0;
+    margin: 0;
+    vertical-align: baseline;
+    position: relative;
+    cursor: pointer;
+    height: 16px !important;
+    border: 0;
+    background-color: #0084D4;
+    border: 1px solid #003662;
+}
+
+#checkValue::before {
+    /* background-color: #0084D4; */
+    border: 1px solid #003662;
+    border-radius: 2px;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-align: center;
+    content: '';
+    width: 18px;
+    height: 18px;
+    display: block;
+    margin: -1px 0 0 -1px;
+}
+
+#popupBox {
+    background: rgb(0 0 0 / 70%);
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    top: 0;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.dontHaveAccount {
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 100%;
+    padding-top: 28px;
+    color: #fff;
+}
+
+.signUPText {
+    border-bottom: 1px solid #FFF;
+    color: #FFF;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#popupBoxMsg {
+    width: 40%;
+    min-width: 300px;
+    height: auto;
+    min-height: 75px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 50px;
+    color: #d10505;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#popupBoxClose {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+input,
+input:focus {
+    outline: 0px;
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+    form {
+        width: auto;
+    }
+}
